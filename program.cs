@@ -9,14 +9,17 @@ namespace arena_s_bojovnikama
     class Program
     {
 
-        public int maxZivotHrac1;
-        public int maxZivotHrac2;
+        
 
         static void Main(string[] args)
         {
+            int maxZivotHrac1;
+            int maxZivotHrac2;
             
-            Zivot1();
-            Zivot2();
+            Random kostka1 = new Random();
+            maxZivotHrac1 = kostka1.Next(50, 100);
+
+            maxZivotHrac2 = kostka1.Next(50, 100);
             
             
 
@@ -29,11 +32,7 @@ namespace arena_s_bojovnikama
             arena.Zapas();
             Console.ReadKey();
 
-            public void Zivot1()
-            {
-                Kostka zivot1 = new Kostka(100);
-                zivot1 = maxZivotHrac1;
-            }
+            
         }
     }
 }
